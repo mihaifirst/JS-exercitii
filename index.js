@@ -19,6 +19,11 @@
 
 let arr = [16, 15, 20, 19, 14];
 
+let varstaMinima = Math.min(...arr);
+console.log(varstaMinima);
+
+//sau
+
 function celMaiTanarJucator(varsta) {
   let varstaMinima = arr[0]; // 16
   for (let i = 0; i < varsta.length; i++) {
