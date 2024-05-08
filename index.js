@@ -86,3 +86,79 @@
 //   }
 //   return birdsPerDay;
 // }
+
+// check if a word is a palindrom using 2 pointers
+
+// function palindr(target) {
+//   let left = 0;
+//   let right = target.length - 1;
+
+//   while (left < right) {
+//     if (target[left] === target[right]) {
+//       left++;
+//       right--;
+//     } else {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+
+// console.log(palindr("aha"));
+// console.log(palindr("aerisirea"));
+// console.log(palindr("masina"));
+
+// check what index integers from the array are summed using 2 pointers
+// var checkForTarget = function (nums, target) {
+//   let left = 0;
+//   let right = nums.length - 1;
+
+//   while (left < right) {
+//     let curr = nums[left] + nums[right];
+//     if (curr == target) {
+//       return [nums.indexOf(nums[left]), nums.indexOf(nums[right])];
+//     }
+
+//     if (curr > target) {
+//       right--;
+//     } else {
+//       left++;
+//     }
+//   }
+
+//   return false;
+// };
+
+// console.log(checkForTarget([1, 2, 4, 6, 8, 9, 14, 15], 3));
+
+// Concatenate 2 arrays
+
+// function sortare(arr1, arr2) {
+//   let arrTotal = [];
+//   let i = 0;
+//   let j = 0;
+
+//   while (i < arr1.length && j < arr2.length) {
+//     if (arr1[i] < arr2[j]) {
+//       arrTotal.push(arr1[i]);
+//       i++;
+//     } else {
+//       arrTotal.push(arr2[j]);
+//       j++;
+//     }
+//   }
+
+//   while (i < arr1.length) {
+//     arrTotal.push(arr1[i]);
+//     i++;
+//   }
+
+//   while (j < arr2.length) {
+//     arrTotal.push(arr2[j]);
+//     j++;
+//   }
+
+//   return arrTotal;
+// }
+
+// console.log(sortare([1, 2, 3, 5], [2, 3, 7, 9]));
